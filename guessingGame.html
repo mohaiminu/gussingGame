@@ -77,38 +77,36 @@
         animation: scale 1s;
 
     }
-    @keyframes scale{
-        to{
-            transform: scale(1.2);
+    @media only screen and (max-width: 600px) {
+        body{
+            background-color:#274546; 
         }
-    }
-     @media only screen and (max-width: 600px) {
         .gamebackground{
             width:100%;
             height:100%;
             left:0;
             top:0;
-            background-color:#274546;
             
         }
         #number{
         position: absolute;
         width:50px;
         height:50px;
-        border:none;
-        top:20px;
+        border:2px solid black;
+        top:60px;
         left:100px;
         text-align: center;
         font-size:32px;
+        border-radius:10px;
     }
     #btn{
         background-color: royalblue;
-        width: 50px;
+        width: 70px;
         height:50px;
         border-radius: 10px;
         position: absolute;
-        top:20px;
-        left:200px;
+        top:60px;
+        left:180px;
         color:white;
         border:none;
     }
@@ -121,19 +119,21 @@
         text-align: center;
         background-color: floralwhite;
         position:absolute;
-        top: 150px;
-        left:50px;
+        top: 250px;
+        left:20px;
         display:flex;
         justify-content: center;
         align-items: center;
         color: #232323;
+        border:2px solid black;
+        border-radius: 10px;
     }
     #imo{
         width:50px;
         height:50px;
         position :absolute;
         right:30px;
-        top:50px;
+        top:150px;
         z-index: 1;
 
     }
@@ -142,14 +142,17 @@
         height:50px;
         background-color:beige;
         position :absolute;
-        left:50px;
-        top:50px;
+        left:20px;
+        top:150px;
         display:flex;
         justify-content: center;
         align-items: center;
         font-size:50px;
+        border-radius: 5px;
+        border:2px solid lightgreen;
     }
 }
+   
 </style>
 <body>
     <div class="gamebackground">
