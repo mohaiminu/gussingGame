@@ -56,7 +56,6 @@
         width:50px;
         height:50px;
         position :absolute;
-        background-image:url('./sad.png');
         right:70px;
         top:50px;
         z-index: 1;
@@ -91,7 +90,7 @@
        <span id="message">
             GUESS A NUMBER!
        </span>
-       <img src="/cool.png" id="imo">
+       <img id="imo">
        </img>
        <span id="count">
         0
@@ -108,6 +107,7 @@
     const computerNumber=Math.floor(Math.random()*100);
     //console.log(computerNumber);
     let count=0;
+    imo.src='cool.png';
     function game(){
         let guessNumber= document.getElementById("number").value;
         guessNumber= parseInt(guessNumber,10);
